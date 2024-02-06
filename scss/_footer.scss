@@ -1,0 +1,130 @@
+.footer {
+    &__copy {
+        display: flex;
+        justify-content: center;
+
+        &-text {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-top: 6rem;
+            text-align: center;
+        }
+    }
+
+    padding: 10rem 0;
+    padding-bottom: 5rem;
+    border-top: 2px solid rgba(51, 51, 51, 0.03);
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__column {
+        &-title {
+            &-text {
+                font-size: 2rem;
+                font-weight: 700;
+                margin-bottom: 4rem;
+            }
+        }
+
+        &-info {
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            gap: 2.6rem;
+            font-size: 1.8rem;
+            color: #767676;
+
+            &-wrapper {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &-address {
+                font-style: normal;
+                line-height: 1.6;
+            }
+
+            &-tel {
+                text-decoration: none;
+                margin-bottom: 2.6rem;
+                color: #767676;
+                transition: all 0.4s ease;
+
+                &:hover {
+                    color: $color-dark;
+                }
+            }
+
+            &-email {
+                text-decoration: none;
+                color: #767676;
+                transition: all 0.4s ease;
+
+                &:hover {
+                    color: $color-dark;
+                }
+            }
+
+            &-list {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 2.6rem;
+            }
+
+            &-item {}
+
+            &-link {
+                text-decoration: none;
+                font-size: 1.8rem;
+                color: #767676;
+                transition: all 0.4s ease;
+
+                &:hover {
+                    color: $color-dark;
+                }
+            }
+        }
+
+        &-logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 8rem;
+
+            &-img {
+                height: 4rem;
+            }
+        }
+
+        &-social {
+            list-style: none;
+            display: flex;
+            gap: 2.4rem;
+
+            &-link {
+                text-decoration: none;
+                font-size: 1.6rem;
+                color: #767676;
+                transition: all 0.4s ease;
+
+                &:hover {
+                    color: $color-dark;
+                }
+            }
+        }
+    }
+}
+
+.social-icon {
+    height: 3.6rem;
+    width: 3.6rem;
+}
+
+.anivia {
+    color: $color-primary;
+    text-decoration: none;
+}

@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="SE" name="country">
+    <meta content="sv-SE" property="og:locale">
+    <meta content="Omnifood, meals, delivery" name="keywords">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description"
+        content="Få läckra och hälsosamma måltider levererade direkt till din dörr med våra matleveranspaket. Välj bland olika alternativ som passar dina kostbehov och njut av bekvämligheten med bekymmersfri måltidsplanering.">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Omnifood &mdash; Beställ Färdigmat Online</title>
+</head>
+
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollPath"></div>
+
+    <main class="main-content">
+        <header class="header" id="header">
+            <nav class="header__nav">
+                <div class="header__nav-logo">
+                    <a href="#header" class="header__nav-logo-link">
+                        <img src="img/omnifood-logo.png" alt="Omnifood Logotype" class="header__nav-logo-img">
+                    </a>
+                </div>
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#steps" class="header__nav-link">Hur det fungerar</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#meals" class="header__nav-link">Måltider</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#reviews" class="header__nav-link">Recensioner</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#prices-plan" class="header__nav-link">Prissättning</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#contact"
+                            class="header__nav-link header__content-btn header-btn-subscribe">Prenumerera</a>
+                    </li>
+                </ul>
+                <button class="menu cross menu--1 btn-mobile-nav">
+                    <svg viewBox="0 0 800 640" class="">
+                        <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
+                            class="top_bar" />
+
+                        <path d="M300,320 L540,320" class="middle_bar" />
+
+                        <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
+                            class="bottom_bar" transform="translate(480, 320) scale(1, -1) translate(-480, -318)" />
+                    </svg>
+                </button>
+            </nav>
+
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__content">
+                        <h1 class="header__content-heading">En hälsosam måltid levererad till din dörr, varje dag</h1>
+                        <p class="header__content-text">Den smarta matprenumerationen som sträcker sig över 365 dagar
+                            per år och får dig att äta hälsosamt igen. Skräddarsydd efter dina personliga smaker och
+                            näringsbehov.</p>
+                        <a href="#meals" class="header__content-btn btn--primary">Börja äta bra</a>
+                        <a href="#steps" class="header__content-btn btn--outline">Lär dig mer</a>
+                        <div class="header__content-customer">
+                            <div class="header__content-customer-wrapper">
+                                <img src="img/customers/customer-1.webp" loading="lazy" alt="customer-1"
+                                    class="header__content-customer-img">
+                                <img src="img/customers/customer-2.webp" loading="lazy" alt="customer-2"
+                                    class="header__content-customer-img">
+                                <img src="img/customers/customer-3.webp" loading="lazy" alt="customer-3"
+                                    class="header__content-customer-img">
+                                <img src="img/customers/customer-4.webp" loading="lazy" alt="customer-4"
+                                    class="header__content-customer-img">
+                                <img src="img/customers/customer-5.webp" loading="lazy" alt="customer-5"
+                                    class="header__content-customer-img">
+                                <img src="img/customers/customer-6.webp" loading="lazy" alt="customer-6"
+                                    class="header__content-customer-img">
+                            </div>
+                            <div class="header__content-customer-text">
+                                <p class="header__content-customer-text-p"><span class="decor">250,000+</span>
+                                    måltider levererades förra året!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header__img">
+                        <img src="img/hero-min.webp" alt="Omnifood, woman enjoys the food" class="header__img-img">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="features" id="features">
+            <div class="container">
+                <div class="features__text"><span class="features__text-heading">Betrodda av</span></div>
+                <div class="features__wrapper">
+                    <div class="features__logo">
+                        <img src="img/logos/forbes.webp" loading="lazy" alt="Forbes-logo" class="features__logo-img">
+                    </div>
+                    <div class="features__logo">
+                        <img src="img/logos/business-insider.webp" loading="lazy" alt="Insider-logo"
+                            class="features__logo-img">
+                    </div>
+                    <div class="features__logo">
+                        <img src="img/logos/techcrunch.webp" loading="lazy" alt="Techcrunch-logo"
+                            class="features__logo-img">
+                    </div>
+                    <div class="features__logo">
+                        <img src="img/logos/the-new-york-times.webp" loading="lazy" alt="NewYork-logo"
+                            class="features__logo-img">
+                    </div>
+                    <div class="features__logo">
+                        <img src="img/logos/usa-today.webp" loading="lazy" alt="USA-today-logo"
+                            class="features__logo-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="steps" id="steps">
+            <div class="container">
+                <div class="steps__text">
+                    <span class="steps__text-subheading">Hur det fungerar</span>
+                    <h2 class="steps__text-heading">Din dagliga dos hälsa i <span class="color-primary"> 3 enkla
+                            steg</span></h2>
+                </div>
+                <div class="step__wrapper">
+                    <div class="step">
+                        <div class="step__content step-mobile-1">
+                            <p class="step__content-number">01</p>
+                            <h3 class="step__content-heading">Berätta vad du gillar</h3>
+                            <p class="step__content-text">Slösa aldrig mer tid på att tänka på vad du ska äta! Omnifood
+                                AI skapar en 100% personlig veckomeny bara för dig. Det ser till att du får alla
+                                näringsämnen och vitaminer du behöver, oavsett vilken diet du följer!
+                            </p>
+                        </div>
+                        <div class="step__app">
+                            <img src="img/app/app-screen-1-min.webp" loading="lazy" alt="Screen-app-1"
+                                class="step__app-img">
+                        </div>
+                    </div>
+                    <div class="step step-reverse">
+                        <div class="step__content step-mobile-2">
+                            <p class="step__content-number">02</p>
+                            <h3 class="step__content-heading">Godkänn ditt veckomenyplan</h3>
+                            <p class="step__content-text">En gång i veckan, godkänn måltidsplanen som genereras för dig
+                                av Omnifood AI. Du kan ändra ingredienser, byta hela måltider eller till och med lägga
+                                till dina egna recept.
+                            </p>
+                        </div>
+                        <div class="step__app">
+                            <img src="img/app/app-screen-2-min.webp" loading="lazy" alt="Screen-app-2"
+                                class="step__app-img">
+                        </div>
+                    </div>
+                    <div class="step">
+                        <div class="step__content step-mobile-3">
+                            <p class="step__content-number">03</p>
+                            <h3 class="step__content-heading">Mottag måltider vid lämplig tidpunkt</h3>
+                            <p class="step__content-text">De bästa kockarna i stan kommer att tillaga din valda måltid
+                                varje dag och vi levererar den till din dörr vid den tidpunkt som passar dig bäst. Du
+                                kan ändra leveransschema och adress dagligen!
+                            </p>
+                        </div>
+                        <div class="step__app">
+                            <img src="img/app/app-screen-3-min.webp" loading="lazy" alt="Screen-app-3"
+                                class="step__app-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="meals" id="meals">
+            <div class="container">
+                <div class="meals__text">
+                    <p class="meals__text-subheading">Måltider</p>
+                    <h3 class="meals__text-heading">Omnifood AI väljer från över 1000+ recept</h3>
+                </div>
+                <div class="meals__wrapper">
+                    <div class="meal">
+                        <div class="meal__cover">
+                            <img src="img/meals/meal-1.webp" loading="lazy" alt="Omnifood-meal-1"
+                                class="meal__cover-img">
+                        </div>
+                        <div class="meal__content">
+                            <div class="meal__content-filter-wrapper">
+                                <p class="meal__content-filter tag--vegetarian">Vegetarian</p>
+                                <p class="meal__content-filter tag--lowFodmap">low FODMAP</p>
+                            </div>
+                            <h4 class="meal__content-title">Japanese Gyozas</h4>
+                            <p class="meal__content-feature">
+                                <ion-icon name="flame-outline" class="meal__content-icon"></ion-icon><span><span
+                                        class="meal__content-feature--bold">650</span>
+                                    calories</span>
+                            </p>
+                            <p class="meal__content-feature">
+                                <ion-icon name="restaurant-outline" class="meal__content-icon"></ion-icon>
+                                <span>NutriScore
+                                    <span class="meal__content-feature--bold">74 &#174;</span></span>
+                            </p>
+                            <p class="meal__content-feature">
+                                <ion-icon name="star-outline" class="meal__content-icon"></ion-icon><span><span
+                                        class="meal__content-feature--bold">4.5</span> rating
+                                    (537)</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="meal">
+                        <div class="meal__cover">
+                            <img src="img/meals/meal-2.webp" loading="lazy" alt="Omnifood-meal-2"
+                                class="meal__cover-img">
+                        </div>
+                        <div class="meal__content">
+                            <div class="meal__content-filter-wrapper">
+                                <p class="meal__content-filter tag--vegan">Vegan</p>
+                                <p class="meal__content-filter tag--paleo">Paleo</p>
+                                <p class="meal__content-filter tag--keto">Keto</p>
+                            </div>
+                            <h4 class="meal__content-title">Avocado OmniSalad</h4>
+                            <p class="meal__content-feature">
+                                <ion-icon name="flame-outline" class="meal__content-icon"></ion-icon><span><span
+                                        class="meal__content-feature--bold">400</span>
+                                    calories</span>
+                            </p>
+                            <p class="meal__content-feature">
+                                <ion-icon name="restaurant-outline" class="meal__content-icon"></ion-icon>
+                                <span>NutriScore
+                                    <span class="meal__content-feature--bold">92 &#174;</span></span>
+                            </p>
+                            <p class="meal__content-feature">
+                                <ion-icon name="star-outline" class="meal__content-icon"></ion-icon><span><span
+                                        class="meal__content-feature--bold">4.7</span> rating
+                                    (441)</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="diet">
+                        <h4 class="diet__heading">Works with any diet:</h4>
+                        <ul class="diet__list">
+                            <li class="diet__item">
+                                <ion-icon name="checkmark-outline" class="diet__icon"></ion-icon>
+                                <span>Vegetarian</span>
+                            </li>
+                            <li class="diet__item">
+                                <ion-icon name="checkmark-outline" class="diet__icon"></ion-icon>
+                                <span>Vegan</span>
+                            </li>
+                            <li class="diet__item">
+                                <ion-icon name="checkmark-outline" class="diet__icon"></ion-icon>
+                                <span> Pescatarian</span>
+                            </li>
+                            <li class="diet__item">
+                                <ion-icon name="checkmark-outline" class="diet__icon"></ion-icon>
+                                <span> Gluten-free</span>
+                            </li>
+                            <li class="diet__item">
+                                <ion-icon name="checkmark-outline" class="diet__icon"></ion-icon>
+                                <span> Lactose-free</span>
+                            </li>
+                            <li class="diet__item">
+                                <ion-icon name="checkmark-outline" class="diet__icon"></ion-icon>
+                                <span> Keto</span>
+                            </li>
+                            <li class="diet__item">
+                                <ion-icon name="checkmark-outline" class="diet__icon"></ion-icon>
+                                <span> Paleo</span>
+                            </li>
+                            <li class="diet__item">
+                                <ion-icon name="checkmark-outline" class="diet__icon"></ion-icon>
+                                <span> Low FODMAP</span>
+                            </li>
+                            <li class="diet__item">
+                                <ion-icon name="checkmark-outline" class="diet__icon"></ion-icon>
+                                <span> Kid-friendly</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="meals__wrapper meal-wrapper-margin-top meals-wrapper-wrap">
+                    <div class="meal">
+                        <div class="meal__cover">
+                            <img src="img/meals/meal-3.webp" loading="lazy" alt="Omnifood-meal-3"
+                                class="meal__cover-img">
+                        </div>
+                        <div class="meal__content">
+                            <div class="meal__content-filter-wrapper">
+                                <p class="meal__content-filter tag--kid">Kid-friendly</p>
+                                <p class="meal__content-filter tag--paleo">Paleo</p>
+                            </div>
+                            <h4 class="meal__content-title">OmniPasta Salad</h4>
+                            <p class="meal__content-feature">
+                                <ion-icon name="flame-outline" class="meal__content-icon"></ion-icon><span><span
+                                        class="meal__content-feature--bold">630</span>
+                                    calories</span>
+                            </p>
+                            <p class="meal__content-feature">
+                                <ion-icon name="restaurant-outline" class="meal__content-icon"></ion-icon>
+                                <span>NutriScore
+                                    <span class="meal__content-feature--bold">77 &#174;</span></span>
+                            </p>
+                            <p class="meal__content-feature">
+                                <ion-icon name="star-outline" class="meal__content-icon"></ion-icon><span><span
+                                        class="meal__content-feature--bold">4.2</span> rating
+                                    (113)</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="meal">
+                        <div class="meal__cover">
+                            <img src="img/meals/meal-4.webp" loading="lazy" alt="Omnifood-meal-4"
+                                class="meal__cover-img">
+                        </div>
+                        <div class="meal__content">
+                            <div class="meal__content-filter-wrapper">
+                                <p class="meal__content-filter tag--pescatarian">Pescatarian</p>
+                                <p class="meal__content-filter tag--keto">Keto</p>
+                            </div>
+                            <h4 class="meal__content-title">Chicken Caesar</h4>
+                            <p class="meal__content-feature">
+                                <ion-icon name="flame-outline" class="meal__content-icon"></ion-icon><span><span
+                                        class="meal__content-feature--bold">440</span>
+                                    calories</span>
+                            </p>
+                            <p class="meal__content-feature">
+                                <ion-icon name="restaurant-outline" class="meal__content-icon"></ion-icon>
+                                <span>NutriScore
+                                    <span class="meal__content-feature--bold">81 &#174;</span></span>
+                            </p>
+                            <p class="meal__content-feature">
+                                <ion-icon name="star-outline" class="meal__content-icon"></ion-icon><span><span
+                                        class="meal__content-feature--bold">5</span> rating
+                                    (1036)</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="meal">
+                        <div class="meal__cover">
+                            <img src="img/meals/meal-5.webp" loading="lazy" alt="Omnifood-meal-5"
+                                class="meal__cover-img">
+                        </div>
+                        <div class="meal__content">
+                            <div class="meal__content-filter-wrapper">
+                                <p class="meal__content-filter tag--paleo">Paleo</p>
+                                <p class="meal__content-filter tag--kid">Kid-friendly</p>
+                                <p class="meal__content-filter tag--keto">Keto</p>
+                            </div>
+                            <h4 class="meal__content-title">OmniBBQ Wings</h4>
+                            <p class="meal__content-feature">
+                                <ion-icon name="flame-outline" class="meal__content-icon"></ion-icon><span><span
+                                        class="meal__content-feature--bold">760</span>
+                                    calories</span>
+                            </p>
+                            <p class="meal__content-feature">
+                                <ion-icon name="restaurant-outline" class="meal__content-icon"></ion-icon>
+                                <span>NutriScore
+                                    <span class="meal__content-feature--bold">68 &#174;</span></span>
+                            </p>
+                            <p class="meal__content-feature">
+                                <ion-icon name="star-outline" class="meal__content-icon"></ion-icon><span><span
+                                        class="meal__content-feature--bold">4.9</span> rating
+                                    (812)</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="meal__btn-wrapper">
+                    <a href="#" class="header__content-btn btn--primary meal__btn">Se alla recept</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <div class="reviews__wrap">
+                    <div class="reviews__wrapper">
+                        <div class="reviews__content">
+                            <p class="reviews__subheading">Recensioner</p>
+                            <h3 class="reviews__heading">När du väl har provat det, kan du inte gå tillbaka</h3>
+                        </div>
+                        <div class="reviews__grid">
+                            <div class="review">
+                                <div class="review__profile">
+                                    <img src="img/customers/dave.webp" loading="lazy" alt="Customer-review-1"
+                                        class="review__profile-img">
+                                    <p class="review__profile-author">Dave Bryson</p>
+                                </div>
+                                <div class="review__text">
+                                    <blockquote>
+                                        Billiga, hälsosamma och goda måltider, utan att ens behöva beställa manuellt!
+                                        Absolut fantastisk service och snabb leverans.
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <div class="review__profile">
+                                    <img src="img/customers/ben.webp" loading="lazy" alt="Customer-review-2"
+                                        class="review__profile-img">
+                                    <p class="review__profile-author">Ben Hadley</p>
+                                </div>
+                                <div class="review__text">
+                                    <blockquote>
+                                        AI-algoritmen är galet bra, den väljer rätt måltider för mig varje gång. Det är
+                                        fantastiskt att inte längre behöva oroa sig för mat!
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <div class="review__profile">
+                                    <img src="img/customers/steve.webp" loading="lazy" alt="Customer-review-3"
+                                        class="review__profile-img">
+                                    <p class="review__profile-author">Steve Miller</p>
+                                </div>
+                                <div class="review__text">
+                                    <blockquote>
+                                        Omnifood räddar livet! Jag har precis startat ett företag, så det finns ingen
+                                        tid för att laga mat.
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <div class="review">
+                                <div class="review__profile">
+                                    <img src="img/customers/hannah.webp" loading="lazy" alt="Customer-review-4"
+                                        class="review__profile-img">
+                                    <p class="review__profile-author">Hannah Smith</p>
+                                </div>
+                                <div class="review__text">
+                                    <blockquote>
+                                        Jag fick Omnifood för hela familjen, och det frigör så mycket tid! Dessutom är
+                                        allt ekologiskt.
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__gallery">
+                        <figure class="reviews__gallery-item">
+                            <img src="img/gallery/gallery-1-min.webp" alt="gallery-photo"
+                                class="reviews__gallery-item-img" loading="lazy">
+                        </figure>
+                        <figure class="reviews__gallery-item">
+                            <img src="img/gallery/gallery-2-min.webp" alt="gallery-photo"
+                                class="reviews__gallery-item-img" loading="lazy">
+                        </figure>
+                        <figure class="reviews__gallery-item">
+                            <img src="img/gallery/gallery-3-min.webp" alt="gallery-photo"
+                                class="reviews__gallery-item-img" loading="lazy">
+                        </figure>
+                        <figure class="reviews__gallery-item">
+                            <img src="img/gallery/gallery-4-min.webp" alt="gallery-photo"
+                                class="reviews__gallery-item-img" loading="lazy">
+                        </figure>
+                        <figure class="reviews__gallery-item">
+                            <img src="img/gallery/gallery-5-min.webp" alt="gallery-photo"
+                                class="reviews__gallery-item-img" loading="lazy">
+                        </figure>
+                        <figure class="reviews__gallery-item">
+                            <img src="img/gallery/gallery-6-min.webp" alt="gallery-photo"
+                                class="reviews__gallery-item-img" loading="lazy">
+                        </figure>
+                        <figure class="reviews__gallery-item">
+                            <img src="img/gallery/gallery-7-min.webp" alt="gallery-photo"
+                                class="reviews__gallery-item-img" loading="lazy">
+                        </figure>
+                        <figure class="reviews__gallery-item">
+                            <img src="img/gallery/gallery-8-min.webp" alt="gallery-photo"
+                                class="reviews__gallery-item-img" loading="lazy">
+                        </figure>
+                        <figure class="reviews__gallery-item">
+                            <img src="img/gallery/gallery-9-min.webp" alt="gallery-photo"
+                                class="reviews__gallery-item-img" loading="lazy">
+                        </figure>
+                        <figure class="reviews__gallery-item">
+                            <img src="img/gallery/gallery-10-min.webp" alt="gallery-photo"
+                                class="reviews__gallery-item-img" loading="lazy">
+                        </figure>
+                        <figure class="reviews__gallery-item">
+                            <img src="img/gallery/gallery-11-min.webp" alt="gallery-photo"
+                                class="reviews__gallery-item-img" loading="lazy">
+                        </figure>
+                        <figure class="reviews__gallery-item">
+                            <img src="img/gallery/gallery-12-min.webp" alt="gallery-photo"
+                                class="reviews__gallery-item-img" loading="lazy">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="prices" id="prices-plan">
+            <div class="container">
+                <div class="prices__content">
+                    <p class="prices__content-subheading">Prisalternativ</p>
+                    <h3 class="prices__content-heading">Hitta ett plan som fungerar <span class="color-primary">för
+                            dig</span></h3>
+                </div>
+                <div class="prices__wrapper">
+                    <div class="price">
+                        <div class="price__plan">
+                            <p class="price__plan-name">Starter</p>
+                        </div>
+                        <div class="price__money">
+                            <p class="price__money-charge"><span>SEK</span>2490</p>
+                        </div>
+                        <div class="price__comment">
+                            <p class="price__comment-text">per månad. Det är bara 40 SEK per måltid!</p>
+                        </div>
+                        <ul class="price__list">
+                            <li class="price__list-item">
+                                <ion-icon name="checkmark-outline" class="diet__icon"></ion-icon> 2 måltider per dag
+                            </li>
+                            <li class="price__list-item">
+                                <ion-icon name="checkmark-outline" class="diet__icon"></ion-icon> Beställ från kl. 11:00
+                                till 21:00
+                            </li>
+                            <li class="price__list-item">
+                                <ion-icon name="close-outline" class="diet__icon"></ion-icon> <del>Omnifood AI
+                                    Recept</del>
+                            </li>
+                            <li class="price__list-item">
+                                <ion-icon name="close-outline" class="diet__icon"></ion-icon> <del>Experter inom
+                                    näring</del>
+                            </li>
+
+                            <li class="price__list-item">
+                                <ion-icon name="checkmark-outline" class="diet__icon"></ion-icon> Gratis leverans
+                            </li>
+                        </ul>
+                        <div class="price__btn">
+                            <a href="#" class="header__content-btn btn--primary price__btn-charge">Välj plan</a>
+                        </div>
+                    </div>
+                    <div class="price price-custom">
+                        <div class="price__plan">
+                            <p class="price__plan-name">Anpassad</p>
+                        </div>
+                        <div class="price__money">
+                            <p class="price__money-charge"><span>SEK</span>3490</p>
+                        </div>
+                        <div class="price__comment">
+                            <p class="price__comment-text">per månad. Det är bara 30 SEK per måltid!</p>
+                        </div>
+                        <ul class="price__list">
+                            <li class="price__list-item">
+                                <ion-icon name="checkmark-outline" class="diet__icon"></ion-icon> <span
+                                    class="meal__content-feature--bold">2 måltider</span> per dag
+                            </li>
+                            <li class="price__list-item">
+                                <ion-icon name="checkmark-outline" class="diet__icon"></ion-icon>Beställ <span
+                                    class="meal__content-feature--bold">24/7</span>
+                            </li>
+                            <li class="price__list-item">
+                                <ion-icon name="checkmark-outline" class="diet__icon"></ion-icon><span
+                                    class="meal__content-feature--bold">Omnifood AI</span> Recept
+                            </li>
+                            <li class="price__list-item">
+                                <ion-icon name="close-outline" class="diet__icon"></ion-icon> <del>Experter inom
+                                    näring</del>
+                            </li>
+                            <li class="price__list-item">
+                                <ion-icon name="checkmark-outline" class="diet__icon"></ion-icon> Gratis leverans
+                            </li>
+                        </ul>
+                        <div class="price__btn">
+                            <a href="#" class="header__content-btn btn--primary price__btn-charge">Välj plan</a>
+                        </div>
+                    </div>
+                    <div class="price price-recommend">
+                        <div class="price__plan">
+                            <p class="price__plan-name">Komplett</p>
+                        </div>
+                        <div class="price__money">
+                            <p class="price__money-charge"><span>SEK</span>4990</p>
+                        </div>
+                        <div class="price__comment">
+                            <p class="price__comment-text">per månad. Det är bara 30 SEK per måltid!</p>
+                        </div>
+                        <ul class="price__list">
+                            <li class="price__list-item">
+                                <ion-icon name="checkmark-outline" class="diet__icon"></ion-icon> <span
+                                    class="meal__content-feature--bold">5 måltider</span> per dag
+                            </li>
+                            <li class="price__list-item">
+                                <ion-icon name="checkmark-outline" class="diet__icon"></ion-icon>Beställ <span
+                                    class="meal__content-feature--bold">24/7</span>
+                            </li>
+                            <li class="price__list-item">
+                                <ion-icon name="checkmark-outline" class="diet__icon"></ion-icon><span
+                                    class="meal__content-feature--bold"> Omnifood AI</span> Recept
+                            </li>
+                            <li class="price__list-item">
+                                <ion-icon name="checkmark-outline" class="diet__icon"></ion-icon><span
+                                    class="meal__content-feature--bold">Experter inom
+                                    näring</span>
+                            </li>
+                            <li class="price__list-item">
+                                <ion-icon name="checkmark-outline" class="diet__icon"></ion-icon> Gratis leverans
+                            </li>
+                        </ul>
+                        <div class="price__btn">
+                            <a href="#" class="header__content-btn btn--primary price__btn-charge">Välj plan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="prices__info">
+                    <aside class="prices__info-text">
+                        Priserna inkluderar alla tillämpliga skatter. Du kan avbryta när som helst. Båda planerna
+                        inkluderar följande:
+                    </aside>
+                </div>
+                <div class="prices__features">
+                    <div class="prices__feature feature-first">
+                        <div class="prices__feature-icon">
+                            <ion-icon name="infinite-outline" class="diet__icon feature-icon"></ion-icon>
+                        </div>
+                        <p class="prices__feature-heading">Laga inte mat</p>
+                        <p class="prices__feature-text">
+                            Våra prenumerationer täcker 365 dagar per år, även inklusive stora helgdagar.
+                            Våra kockar använder eko produkter
+                        </p>
+                    </div>
+
+                    <div class="prices__feature">
+                        <div class="prices__feature-icon">
+                            <ion-icon name="leaf-outline" class="diet__icon feature-icon"></ion-icon>
+                        </div>
+                        <p class=" prices__feature-heading">Lokalt och ekologiskt</p>
+                        <p class="prices__feature-text">
+                            Våra kockar använder endast lokala, färska och eko-friendly produkter för att tillaga dina
+                            måltider
+                        </p>
+                    </div>
+
+                    <div class="prices__feature feature-last">
+                        <div class="prices__feature-icon">
+                            <ion-icon name="pause-outline" class="diet__icon feature-icon"></ion-icon>
+                        </div>
+                        <p class="prices__feature-heading">Pausea när som helst</p>
+                        <p class="prices__feature-text">
+                            Ska du på semester? Pausa bara din prenumeration och vi återbetalar obnyttjade dagar
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact__content">
+                        <h3 class="contact__content-heading">Få din första måltid gratis!</h3>
+                        <p class="contact__content-text">
+                            Hälsosamma, smakfulla och bekymmersfria måltider väntar på dig. Börja äta bra idag. Du kan
+                            avbryta eller pausa när som helst. Och den första måltiden är på oss!
+                        </p>
+                        <form action="#" class="contact__content-form">
+                            <div class="contact__content-form-wrapper">
+                                <label for="name">Namn</label>
+                                <input type="text" placeholder="Sara Nillson" id="name" name="Name" required>
+                            </div>
+
+                            <div class="contact__content-form-wrapper">
+                                <label for="email">E-post</label>
+                                <input type="email" placeholder="saranilson@gmail.com" id="email" name="Email" required>
+                            </div>
+
+                            <div class="contact__content-form-wrapper">
+                                <label for="email">Varifrån hörde du talas om oss?</label>
+                                <select name="Choice" id="select-choice" required>
+                                    <option value="">Var god välj ett alternativ:</option>
+                                    <option value="Friends">Friends and Family</option>
+                                    <option value="Youtube">Youtube</option>
+                                    <option value="Facebook">Facebook</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                            </div>
+                            <div class="contact__content-form-wrapper btn-flex">
+                                <button class="contact__content-form-btn">Prenumerera</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact__img" role="img" aria-label="Contact form as Woman"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer__column-logo">
+                    <img src="img/omnifood-logo.png" alt="Omnifood-logo" class="footer__column-logo-img">
+                </div>
+                <div class="footer-wrapper">
+                    <div class="footer__column">
+                        <div class="footer__column-title">
+                            <p class="footer__column-title-text">Kontakta oss</p>
+                        </div>
+                        <div class="footer__column-info">
+                            <p class="footer__column-info-address">Sörbylund 22, Trelleborg, 231 84
+                            </p>
+                            <div class="footer__column-info-wrapper">
+                                <a href="tel:0450-5928145" class="footer__column-info-tel">0450-5928145</a>
+                                <a href="mailto:hello@omnifood.com"
+                                    class="footer__column-info-email">hello@omnifood.com</a>
+                            </div>
+                            <div class="footer__column-social">
+                                <a href="#" class="footer__column-social-link" aria-label="Subscribe Instagram">
+                                    <ion-icon name="logo-instagram" class="social-icon"></ion-icon>
+                                </a>
+                                <a href="#" class="footer__column-social-link" aria-label="Subscribe Facebook">
+                                    <ion-icon name="logo-facebook" class="social-icon"></ion-icon>
+                                </a>
+                                <a href="#" class="footer__column-social-link" aria-label="Subscribe Whatsapp">
+                                    <ion-icon name="logo-whatsapp" class="social-icon"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__column">
+                        <div class="footer__column-title">
+                            <p class="footer__column-title-text">
+                                Profil</p>
+                        </div>
+                        <div class="footer__column-info">
+                            <ul class="footer__column-info-list">
+                                <li class="footer__column-info-item">
+                                    <a href="#" class="footer__column-info-link">Skapa Profil</a>
+                                </li>
+                                <li class="footer__column-info-item">
+                                    <a href="#" class="footer__column-info-link">Anmälan</a>
+                                </li>
+                                <li class="footer__column-info-item">
+                                    <a href="#" class="footer__column-info-link">iOS App</a>
+                                </li>
+                                <li class="footer__column-info-item">
+                                    <a href="#" class="footer__column-info-link">Android App</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__column">
+                        <div class="footer__column-title">
+                            <p class="footer__column-title-text">Företag</p>
+                        </div>
+                        <div class="footer__column-info">
+                            <ul class="footer__column-info-list">
+                                <li class="footer__column-info-item">
+                                    <a href="#" class="footer__column-info-link">Om Omnifood</a>
+                                </li>
+                                <li class="footer__column-info-item">
+                                    <a href="#" class="footer__column-info-link">För Företag</a>
+                                </li>
+                                <li class="footer__column-info-item">
+                                    <a href="#" class="footer__column-info-link">Partner</a>
+                                </li>
+                                <li class="footer__column-info-item">
+                                    <a href="#" class="footer__column-info-link">Karriärer</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__column">
+                        <div class="footer__column-title">
+                            <p class="footer__column-title-text">Resurser</p>
+                        </div>
+                        <div class="footer__column-info">
+                            <ul class="footer__column-info-list">
+                                <li class="footer__column-info-item">
+                                    <a href="#" class="footer__column-info-link">Recept</a>
+                                </li>
+                                <li class="footer__column-info-item">
+                                    <a href="#" class="footer__column-info-link">Supportcenter</a>
+                                </li>
+                                <li class="footer__column-info-item">
+                                    <a href="#" class="footer__column-info-link">Villkor</a>
+                                </li>
+                                <li class="footer__column-info-item">
+                                    <a href="#" class="footer__column-info-link">Integritet</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copy">
+                    <aside class="footer__copy-text">© <span class="current-year">2023</span> Omnifood AB - Alla
+                        rättigheter reserverade. Utvecklad och
+                        designad av <a class="anivia" href="https://anivia.se" target="_blank">Anivia Marketing
+                            Agency</a></aside>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script defer nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
